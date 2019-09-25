@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,600,700,700i,800|Rubik+Mono+One|Rubik:400,500,700,900&display=swap");
+a,
+a:visited,
+a:hover,
+a:link,
+a:active,
+a:focus {
+  text-decoration: none !important;
+  margin: 0px;
+  outline: none;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+p {
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #fff;
+  margin: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 14px;
+  }
+}
+
+h1, h2, h3 {
+  font-family: "Rubik Mono One", sans-serif;
+  margin: 0px;
+  color: #3d445c;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+  margin: 0px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #f3f3f3;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1440px !important;
+}
+
+/* ==========================================================================
+Some common css
+========================================================================== */
+body::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1990D2;
+  border-radius: 5px;
+}
+
+.ajax-loader {
+  width: 32px !important;
+  height: 32px !important;
+  background-image: url(../images/spin.svg) !important;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -16px !important;
+  margin-left: -16px !important;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=main.css.map */

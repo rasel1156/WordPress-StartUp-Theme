@@ -1,0 +1,33 @@
+@mixin tablet {
+    @media screen and (min-width: 769px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin flex_div() {
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+        width: 50%;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+}
+
+@mixin flex($align, $justify) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: $align;
+    justify-content: $justify;
+
+}
